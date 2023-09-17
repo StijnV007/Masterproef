@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.3.0.747508558998">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.748256985711">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.3.0">
+    <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
     <title>Raspberry Pi</title>
     <meta name="title" content="Raspberry Pi">
-    <meta name="description" content="This is a paragraph.">
+    <meta name="description" content="Om kennismaken met de Raspberry Pi, gaan we een aantal eenvoudige opdrachten uitvoeren die mogelijks relevant zijn aan de masterproef.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://example.com/opstart-masterproef/programmeerluik/">
@@ -20,21 +20,24 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://example.com/opstart-masterproef/programmeerluik/">
     <meta property="og:title" content="Raspberry Pi">
-    <meta property="og:description" content="This is a paragraph.">
+    <meta property="og:description" content="Om kennismaken met de Raspberry Pi, gaan we een aantal eenvoudige opdrachten uitvoeren die mogelijks relevant zijn aan de masterproef.">
+    <meta property="og:image" content="https://example.com/opstart-masterproef/programmeerluik/static/raspberry-pi-pinout.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://example.com/opstart-masterproef/programmeerluik/">
     <meta property="twitter:title" content="Raspberry Pi">
-    <meta property="twitter:description" content="This is a paragraph.">
+    <meta property="twitter:description" content="Om kennismaken met de Raspberry Pi, gaan we een aantal eenvoudige opdrachten uitvoeren die mogelijks relevant zijn aan de masterproef.">
+    <meta property="twitter:image" content="https://example.com/opstart-masterproef/programmeerluik/static/raspberry-pi-pinout.png">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.3.0.747508558998" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.748256985711" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.3.0.747508558998" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.3.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.3.0.747508558998" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.748256985711" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.748256985711" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.748256985711" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -155,46 +158,182 @@
         <span>Raspberry Pi</span>
     </h1>
 </doc-anchor-target>
-<p>This is a paragraph.</p>
-<p>Both <a href="readme.md">internal</a> and <a href="https://example.com">external</a> links work.</p>
-<p>Another paragraph with <strong>bold</strong>, <em>italic</em>, <del>strikethrough</del>, and <code v-pre>code</code> samples.</p>
-<hr>
-<doc-anchor-target id="lists">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#lists">#</doc-anchor-trigger>
-        <span>Lists</span>
-    </h2>
-</doc-anchor-target>
-<ul>
-<li>First item</li>
-<li>Second item</li>
-<li>Third item</li>
-</ul>
+<p>Om kennismaken met de Raspberry Pi, gaan we een aantal eenvoudige opdrachten uitvoeren die mogelijks relevant zijn aan de masterproef. We gebruiken hiervoor de Raspberry Pi 3B+.</p>
+<p>De opdrachten zijn:</p>
 <ol>
-<li>First item</li>
-<li>Second item</li>
-<li>Third item</li>
+<li>Aansturen van DO (LED) en inlezen van een DI (drukknop)</li>
+<li>Aansturen van een AO (servomotor) en inlezen van een AI (potentiometer)</li>
+<li>Inlezen van een temperatuur- en vochtigheidssensor (DHT11)</li>
+<li>Oproepen van functies d.m.v. een ingang-interrupt</li>
 </ol>
-<blockquote>
-<p>&quot;Cool! This is a quotation.&quot;</p>
-</blockquote>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Need to draw attention to something? Use an alert.</p>
-        </div>
-    </div>
-</div>
+<p>Tijdens deze opdrachten zullen we gebruik maken van de GPIO-pinnen van de Raspberry Pi. Deze pinnen zijn als volgt genummerd:
+<figure class="content-center">
+    <img src="static/raspberry-pi-pinout.png" alt="Pin benummering Raspberry Pi (bron: https://pinout.xyz/)">
+    <figcaption class="caption">Pin benummering Raspberry Pi (bron: https://pinout.xyz/)</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="1-aansturen-van-do-led-en-inlezen-van-een-di-drukknop">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-aansturen-van-do-led-en-inlezen-van-een-di-drukknop">#</doc-anchor-trigger>
+        <span>1. Aansturen van DO (LED) en inlezen van een DI (drukknop)</span>
+    </h3>
+</doc-anchor-target>
+<p>De componenten zijn als volgt aangesloten:</p>
+<ul>
+<li>LED is aangesloten op GPIO14</li>
+<li>Drukknop is aangesloten op GPIO15
+<figure class="content-center">
+    <img src="static/breadboard-led-drukknop.svg" alt="Breadboard: LED + drukknop">
+    <figcaption class="caption">Breadboard: LED + drukknop</figcaption>
+</figure>
+</li>
+</ul>
+<p>De gebruikte code voor deze opdracht is:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">import RPi.GPIO as GPIO
+
+def setup_gpio():
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(14, GPIO.OUT)
+    GPIO.setup(15, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+
+def loop():
+    while True:
+        if GPIO.input(15) == GPIO.HIGH:
+            GPIO.output(14, GPIO.HIGH)
+        else:
+            GPIO.output(14, GPIO.LOW)
+
+if __name__ == &quot;__main__&quot;:
+    try:
+        setup_gpio()
+        loop()
+    finally:
+        GPIO.cleanup()</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="2-aansturen-van-een-ao-servomotor-en-inlezen-van-een-ai-potentiometer">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-aansturen-van-een-ao-servomotor-en-inlezen-van-een-ai-potentiometer">#</doc-anchor-trigger>
+        <span>2. Aansturen van een AO (servomotor) en inlezen van een AI (potentiometer)</span>
+    </h3>
+</doc-anchor-target>
+<p>De componenten zijn als volgt aangesloten:</p>
+<ul>
+<li>Potentiometer is aangesloten op GPIO14</li>
+<li>Servomotor is aangesloten op GPIO15</li>
+</ul>
+<p>Aangezien de gebruikte servomotor slechts een beperkte hoeveelheid stroom trekt, is het toegelaten om deze rechtstreeks te voeden vanuit de Raspberry Pi. Indien er meerdere of krachtigere servomotoren worden aangesloten, is het aangeraden om deze aan te sluiten op een externe voeding.</p>
+<p><figure class="content-center">
+    <img src="static/breadboard-pot-servo.svg" alt="Breadboard: Potentiometer + servomotor">
+    <figcaption class="caption">Breadboard: Potentiometer + servomotor</figcaption>
+</figure>
+</p>
+<p>De gebruikte code voor deze opdracht is:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">import RPi.GPIO as GPIO
+import time
+
+def setup_gpio():
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(14, GPIO.IN)
+    GPIO.setup(15, GPIO.OUT)
+
+def loop():
+    while True:
+        potentiometer_value = GPIO.input(14)
+        GPIO.output(15, potentiometer_value)
+        time.sleep(0.1)
+
+if __name__ == &quot;__main__&quot;:
+    try:
+        setup_gpio()
+        loop()
+    finally:
+        GPIO.cleanup()</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="3-inlezen-van-een-temperatuur--en-vochtigheidssensor-dht11">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-inlezen-van-een-temperatuur--en-vochtigheidssensor-dht11">#</doc-anchor-trigger>
+        <span>3. Inlezen van een temperatuur- en vochtigheidssensor (DHT11)</span>
+    </h3>
+</doc-anchor-target>
+<p><figure class="content-center">
+    <img src="static/breadboard-dht11.svg" alt="Breadboard: DHT11">
+    <figcaption class="caption">Breadboard: DHT11</figcaption>
+</figure>
+</p>
+<p>De gebruikte code voor deze opdracht is:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">import RPi.GPIO as GPIO
+import time
+import Adafruit_DHT
+
+def loop():
+    while True:
+        humidity, temperature = Adafruit_DHT.read_retry(Adafruit_DHT.DHT11, 4)
+        if humidity is not None and temperature is not None:
+            print('Temp={0:0.1f}*C  Humidity={1:0.1f}%'.format(temperature, humidity))
+        else:
+            print('Failed to get reading. Try again!')
+        time.sleep(1)
+
+if __name__ == '__main__':
+    try:
+        loop()
+    finally:
+        GPIO.cleanup()</code></pre>
+</doc-codeblock></div>
+<p>De code maakt gebruik van de &quot;Adafruit_DHT&quot; bibliotheek. Deze is te installeren door volgende commando&#x27;s uit te voeren:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-bash"><code v-pre class="language-bash">pip install Adafruit-DHT</code></pre>
+</doc-codeblock></div>
+<p>In de terminal kan je de temperatuur en vochtigheid aflezen:
+<figure class="content-center">
+    <img src="static/opdracht_3_terminal.png" alt="Terminal: DHT11">
+    <figcaption class="caption">Terminal: DHT11</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="4-oproepen-van-functies-dmv-een-ingang-interrup">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#4-oproepen-van-functies-dmv-een-ingang-interrup">#</doc-anchor-trigger>
+        <span>4. Oproepen van functies d.m.v. een ingang-interrup</span>
+    </h3>
+</doc-anchor-target>
+<p>De componenten zijn als volgt aangesloten:</p>
+<ul>
+<li>LED is aangesloten op GPIO14</li>
+<li>Drukknop is aangesloten op GPIO15
+<figure class="content-center">
+    <img src="static/breadboard-led-drukknop.svg" alt="Breadboard: LED + drukknop">
+    <figcaption class="caption">Breadboard: LED + drukknop</figcaption>
+</figure>
+</li>
+</ul>
+<p>De gebruikte code voor deze opdracht is:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">import RPi.GPIO as GPIO
+
+def setup_gpio():
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(14, GPIO.OUT, initial=GPIO.LOW)
+    GPIO.setup(15, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+    GPIO.add_event_detect(15, GPIO.FALLING, callback=button_callback, bouncetime=200)
+
+def loop():
+    while True:
+        pass
+
+def button_callback(channel):
+    GPIO.output(14, not GPIO.input(14))
+
+
+if __name__ == &quot;__main__&quot;:
+    try:
+        setup_gpio()
+        loop()
+    finally:
+        GPIO.cleanup()</code></pre>
+</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -254,6 +393,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Raspberry Pi", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Raspberry Pi", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
