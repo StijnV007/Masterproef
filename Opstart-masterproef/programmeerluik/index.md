@@ -28,7 +28,7 @@ De componenten zijn als volgt aangesloten:
 * Potentiometer is aangesloten op GPIO14
 * Servomotor is aangesloten op GPIO15
 
-Aangezien de gebruikte servomotor slechts een beperkte hoeveelheid stroom trekt, is het toegelaten om deze rechtstreeks te voeden vanuit de Raspberry Pi. Indien er meerdere of krachtigere servomotoren worden aangesloten, is het aangeraden om deze aan te sluiten op een externe voeding.
+Aangezien de gebruikte servomotor slechts een beperkte hoeveelheid stroom trekt, is het toegelaten om deze rechtstreeks te voeden vanuit de Raspberry Pi. Indien er meerdere of krachtigere servomotoren worden aangesloten, is het verplicht om deze aan te sluiten op een externe voeding.
 
 ![Breadboard: Potentiometer + servomotor](static/breadboard-pot-servo.svg)
 
@@ -41,7 +41,7 @@ De gebruikte code voor deze opdracht is:
 De gebruikte code voor deze opdracht is:
 :::code source="static/Opdracht_3.py" :::
 
-De code maakt gebruik van de "Adafruit_DHT" bibliotheek. Deze is te installeren door volgende commando's uit te voeren:
+De code maakt gebruik van de "Adafruit_DHT" bibliotheek. Deze is te installeren door volgend commando uit te voeren:
 ```bash
 pip install Adafruit-DHT
 ```

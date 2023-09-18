@@ -5,27 +5,8 @@ icon: ":fish:"
 
 # Biologische luik
 
-This is a paragraph.
+Een overzicht maken van de vissen in zoetwater in Vlaanderen, met speciale aandacht voor de geluiden die ze maken. 
+Ook beschrijven hoe een jaar van een vis er uit ziet, welke fasen zijn er in een jaar, en wat is hun juiste timing voor de verschillende soorten.
+Misschien vind je geluidssamples (recordings) van die vissen.
 
-Both [internal](README.md) and [external](https://example.com) links work.
-
-
-Another paragraph with **bold**, _italic_, ~~strikethrough~~, and `code` samples.
-
----
-
-## Lists
-
-- First item
-- Second item
-- Third item
-
-1. First item
-2. Second item
-3. Third item
-
-> "Cool! This is a quotation."
-
-!!!
-Need to draw attention to something? Use an alert.
-!!!
+**Nog aan te vullen**

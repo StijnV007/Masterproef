@@ -5,27 +5,8 @@ icon: ":leaves:"
 
 # Fysisch luik
 
-This is a paragraph.
+Onderzoeken van het drijfvermogen. Ik dacht in eerste instantie aan een buistype, met aan de 2 uiteinden een ballastkamer.
+Dus een kamer met een variabel lucht vs water volume. Je zou eens een eenvoudig model moeten opstellen om het drijfvermogen in kaart te brengen,
+ook naar gevoeligheden van bepaalde ontwerpparameters. Ik denk dat je hier best een stukje python code schrijft, dat dan ook mooie plots kan maken.
 
-Both [internal](README.md) and [external](https://example.com) links work.
-
-
-Another paragraph with **bold**, _italic_, ~~strikethrough~~, and `code` samples.
-
----
-
-## Lists
-
-- First item
-- Second item
-- Third item
-
-1. First item
-2. Second item
-3. Third item
-
-> "Cool! This is a quotation."
-
-!!!
-Need to draw attention to something? Use an alert.
-!!!
+**Nog aan te vullen**
